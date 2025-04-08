@@ -7,14 +7,19 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
       font-size: large;
-      transform: scale(0.5);
-      transform-origin: top left;
+      margin: 0;
+     padding: 0;
+       display: flex;
+      justify-content: center;
+      background-color: #f9f9f9;
+      overflow-x: hidden;
     }
+    .zoom-wrapper {
+  transform: scale(0.5);
+  transform-origin: top center;
+  width: 200%;
+}
 
     header {
       background-color: #6c4d6c;
@@ -42,7 +47,7 @@
   </style>
 </head>
 <body>
-
+<div class="zoom-wrapper">
   <header>
     <h1>Anjali</h1>
     <p>Data Analyst | Business Analyst | Business Intelligence Analyst</p>
@@ -85,6 +90,6 @@
   <footer>
     &copy; 2025 Anjali
   </footer>
-
+</div>
 </body>
 </html>
